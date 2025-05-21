@@ -6,14 +6,80 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BD9A1B702DD5D5AA00D39F56 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9A1B6F2DD5D5AA00D39F56 /* WidgetKit.framework */; };
+		BD9A1B722DD5D5AA00D39F56 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9A1B712DD5D5AA00D39F56 /* SwiftUI.framework */; };
+		BD9A1B832DD5D5AB00D39F56 /* Terbit-WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BD9A1B6D2DD5D5AA00D39F56 /* Terbit-WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD9A1B812DD5D5AB00D39F56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD9A194E2DD3962F00D39F56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD9A1B6C2DD5D5AA00D39F56;
+			remoteInfo = "Terbit-WidgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BD9A1B882DD5D5AB00D39F56 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BD9A1B832DD5D5AB00D39F56 /* Terbit-WidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		BD70E9342DDAF1E100104760 /* Terbit-WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Terbit-WidgetExtension.entitlements"; sourceTree = "<group>"; };
 		BD9A19562DD3962F00D39F56 /* Terbit-Improvement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Terbit-Improvement.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD9A1B6D2DD5D5AA00D39F56 /* Terbit-WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Terbit-WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD9A1B6F2DD5D5AA00D39F56 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		BD9A1B712DD5D5AA00D39F56 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BD9A1B842DD5D5AB00D39F56 /* Exceptions for "Terbit-Widget" folder in "Terbit-WidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = BD9A1B6C2DD5D5AA00D39F56 /* Terbit-WidgetExtension */;
+		};
+		BD9A1B8A2DD5D6E400D39F56 /* Exceptions for "Terbit-Improvement" folder in "Terbit-WidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Extensions/ExtDate.swift,
+				Extensions/Utils.swift,
+				Features/Home/HomeModel.swift,
+				Features/Streak/StreakManager.swift,
+				Resource/Assets.xcassets,
+			);
+			target = BD9A1B6C2DD5D5AA00D39F56 /* Terbit-WidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		BD9A19582DD3962F00D39F56 /* Terbit-Improvement */ = {
+		BD9A1A352DD4463E00D39F56 /* Terbit-Improvement */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BD9A1B8A2DD5D6E400D39F56 /* Exceptions for "Terbit-Improvement" folder in "Terbit-WidgetExtension" target */,
+			);
 			path = "Terbit-Improvement";
+			sourceTree = "<group>";
+		};
+		BD9A1B732DD5D5AA00D39F56 /* Terbit-Widget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BD9A1B842DD5D5AB00D39F56 /* Exceptions for "Terbit-Widget" folder in "Terbit-WidgetExtension" target */,
+			);
+			path = "Terbit-Widget";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,14 +92,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BD9A1B6A2DD5D5AA00D39F56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD9A1B722DD5D5AA00D39F56 /* SwiftUI.framework in Frameworks */,
+				BD9A1B702DD5D5AA00D39F56 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		BD9A194D2DD3962F00D39F56 = {
 			isa = PBXGroup;
 			children = (
-				BD9A19582DD3962F00D39F56 /* Terbit-Improvement */,
+				BD70E9342DDAF1E100104760 /* Terbit-WidgetExtension.entitlements */,
+				BD9A1B732DD5D5AA00D39F56 /* Terbit-Widget */,
+				BD9A1B6E2DD5D5AA00D39F56 /* Frameworks */,
 				BD9A19572DD3962F00D39F56 /* Products */,
+				BD9A1A352DD4463E00D39F56 /* Terbit-Improvement */,
 			);
 			sourceTree = "<group>";
 		};
@@ -41,8 +119,18 @@
 			isa = PBXGroup;
 			children = (
 				BD9A19562DD3962F00D39F56 /* Terbit-Improvement.app */,
+				BD9A1B6D2DD5D5AA00D39F56 /* Terbit-WidgetExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BD9A1B6E2DD5D5AA00D39F56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD9A1B6F2DD5D5AA00D39F56 /* WidgetKit.framework */,
+				BD9A1B712DD5D5AA00D39F56 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,13 +143,15 @@
 				BD9A19522DD3962F00D39F56 /* Sources */,
 				BD9A19532DD3962F00D39F56 /* Frameworks */,
 				BD9A19542DD3962F00D39F56 /* Resources */,
+				BD9A1B882DD5D5AB00D39F56 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BD9A1B822DD5D5AB00D39F56 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				BD9A19582DD3962F00D39F56 /* Terbit-Improvement */,
+				BD9A1A352DD4463E00D39F56 /* Terbit-Improvement */,
 			);
 			name = "Terbit-Improvement";
 			packageProductDependencies = (
@@ -69,6 +159,28 @@
 			productName = "Terbit-Improvement";
 			productReference = BD9A19562DD3962F00D39F56 /* Terbit-Improvement.app */;
 			productType = "com.apple.product-type.application";
+		};
+		BD9A1B6C2DD5D5AA00D39F56 /* Terbit-WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD9A1B852DD5D5AB00D39F56 /* Build configuration list for PBXNativeTarget "Terbit-WidgetExtension" */;
+			buildPhases = (
+				BD9A1B692DD5D5AA00D39F56 /* Sources */,
+				BD9A1B6A2DD5D5AA00D39F56 /* Frameworks */,
+				BD9A1B6B2DD5D5AA00D39F56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				BD9A1B732DD5D5AA00D39F56 /* Terbit-Widget */,
+			);
+			name = "Terbit-WidgetExtension";
+			packageProductDependencies = (
+			);
+			productName = "Terbit-WidgetExtension";
+			productReference = BD9A1B6D2DD5D5AA00D39F56 /* Terbit-WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -83,6 +195,9 @@
 					BD9A19552DD3962F00D39F56 = {
 						CreatedOnToolsVersion = 16.2;
 					};
+					BD9A1B6C2DD5D5AA00D39F56 = {
+						CreatedOnToolsVersion = 16.2;
+					};
 				};
 			};
 			buildConfigurationList = BD9A19512DD3962F00D39F56 /* Build configuration list for PBXProject "Terbit-Improvement" */;
@@ -94,18 +209,28 @@
 			);
 			mainGroup = BD9A194D2DD3962F00D39F56;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = BD9A19572DD3962F00D39F56 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				BD9A19552DD3962F00D39F56 /* Terbit-Improvement */,
+				BD9A1B6C2DD5D5AA00D39F56 /* Terbit-WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		BD9A19542DD3962F00D39F56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD9A1B6B2DD5D5AA00D39F56 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +247,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BD9A1B692DD5D5AA00D39F56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD9A1B822DD5D5AB00D39F56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD9A1B6C2DD5D5AA00D39F56 /* Terbit-WidgetExtension */;
+			targetProxy = BD9A1B812DD5D5AB00D39F56 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		BD9A19642DD3963000D39F56 /* Debug */ = {
@@ -249,6 +389,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Terbit-Improvement/Terbit-Improvement.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Terbit-Improvement/Preview Content\"";
@@ -278,6 +419,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Terbit-Improvement/Terbit-Improvement.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Terbit-Improvement/Preview Content\"";
@@ -302,6 +444,62 @@
 			};
 			name = Release;
 		};
+		BD9A1B862DD5D5AB00D39F56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Terbit-WidgetExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4QYKG649KC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Terbit-Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Terbit-Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Azis.Terbit-Improvement.Terbit-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD9A1B872DD5D5AB00D39F56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Terbit-WidgetExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4QYKG649KC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Terbit-Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Terbit-Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Azis.Terbit-Improvement.Terbit-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -319,6 +517,15 @@
 			buildConfigurations = (
 				BD9A19672DD3963000D39F56 /* Debug */,
 				BD9A19682DD3963000D39F56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD9A1B852DD5D5AB00D39F56 /* Build configuration list for PBXNativeTarget "Terbit-WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD9A1B862DD5D5AB00D39F56 /* Debug */,
+				BD9A1B872DD5D5AB00D39F56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
