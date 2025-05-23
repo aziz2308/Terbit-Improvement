@@ -22,7 +22,7 @@ struct WidgetEntry: TimelineEntry {
 }
 
 struct Provider: AppIntentTimelineProvider {
-    let streakManager = StreakManagerWidget()
+    let streakManager = StreakManager()
     
     func placeholder(in context: Context) -> WidgetEntry {
         WidgetEntry(
